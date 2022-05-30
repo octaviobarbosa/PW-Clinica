@@ -1,0 +1,128 @@
+﻿@model PW_Clinica.Models.tbMedico_Paciente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbMedico_Paciente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @* Nome,RG,CPF,DataNascimento,NomeResponsavel,Sexo,Etnia,Endereco,Bairro,IdCidade,TelResidencial,TelCelular *@
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPaciente.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InformacaoResumida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InformacaoResumida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPaciente.RG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.RG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPaciente.CPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.CPF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPaciente.DataNascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.DataNascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPaciente.NomeResponsavel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.NomeResponsavel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPaciente.Sexo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.Sexo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPaciente.Etnia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.Etnia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPaciente.Endereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.Endereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPaciente.Bairro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.Bairro)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Cidade")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.tbCidade.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPaciente.TelResidencial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.TelResidencial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbPaciente.TelCelular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbPaciente.TelCelular)
+        </dd>
+
+
+
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdMedico_Paciente }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
